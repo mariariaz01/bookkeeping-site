@@ -1,0 +1,90 @@
+import type { Metadata } from "next";
+import PricingCard from "@/components/PricingCard";
+import FAQAccordion from "@/components/FAQAccordion";
+
+export const metadata: Metadata = {
+  title: "Bookkeeping Pricing Packages | Canadian Bookkeeping Specialists",
+  description:
+    "Transparent bookkeeping pricing packages for Canadian small businesses — Starter, Growth, and Premium. Book a free consultation for a custom quote.",
+  alternates: { canonical: "/pricing" },
+};
+
+const packages = [
+  {
+    name: "Starter",
+    startingAt: "$XXX",
+    description: "For new and small businesses with straightforward, single-account bookkeeping needs.",
+    features: [
+      "Monthly transaction categorization",
+      "One bank/credit card reconciliation",
+      "Monthly profit & loss statement",
+      "Email support",
+    ],
+  },
+  {
+    name: "Growth",
+    startingAt: "$XXX",
+    description: "For growing businesses with multiple accounts and more moving pieces.",
+    features: [
+      "Everything in Starter",
+      "Up to 4 account reconciliations",
+      "Monthly balance sheet",
+      "GST/HST tracking",
+      "Accounts payable & receivable tracking",
+    ],
+    featured: true,
+  },
+  {
+    name: "Premium",
+    startingAt: "$XXX",
+    description: "For established businesses that want fuller reporting and dedicated support.",
+    features: [
+      "Everything in Growth",
+      "Unlimited account reconciliations",
+      "Custom financial reporting",
+      "Payroll support",
+      "Priority response times",
+      "Direct coordination with your accountant",
+    ],
+  },
+];
+
+const pricingFaqs = [
+  {
+    q: "Why don't you list exact prices?",
+    a: "Bookkeeping needs vary with transaction volume, number of accounts, and industry. We provide an exact quote after a short, free consultation.",
+  },
+  {
+    q: "Are there any setup fees?",
+    a: "Some accounts — particularly catch-up cleanups or new QuickBooks Online setups — may involve a one-time onboarding fee, which we'll always confirm upfront.",
+  },
+  {
+    q: "Can I change packages later?",
+    a: "Yes. As your business grows, you can move between packages at any time.",
+  },
+];
+
+export default function PricingPage() {
+  return (
+    <section className="max-w-content mx-auto px-6 py-16 md:py-20">
+      <p className="ledger-rule text-xs font-mono uppercase tracking-widest mb-4 max-w-fit pr-4">Pricing</p>
+      <h1 className="font-display text-4xl text-ink dark:text-sage-100 max-w-2xl">
+        Straightforward packages, sized to your business
+      </h1>
+      <p className="mt-4 text-ink-400 dark:text-sage-100/70 max-w-xl">
+        Every business's bookkeeping needs are a little different, so exact pricing is confirmed after a free consultation. Here's what to expect at each level.
+      </p>
+
+      <div className="mt-12 grid md:grid-cols-3 gap-6">
+        {packages.map((p) => (
+          <PricingCard key={p.name} {...p} />
+        ))}
+      </div>
+
+      <div className="mt-20 max-w-2xl">
+        <h2 className="font-display text-2xl text-ink dark:text-sage-100 mb-6">Pricing questions</h2>
+        <FAQAccordion items={pricingFaqs} />
+      </div>
+    </section>
+  );
+}

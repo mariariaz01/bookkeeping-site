@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  @apply bg-sage text-charcoal dark:bg-ink-900 dark:text-sage-100 font-body antialiased;
+}
+
+/* Signature motif: ledger rule — a hairline with a tabular numeral, used as a
+   section divider. This is the one recurring device tying pages together. */
+.ledger-rule {
+  @apply flex items-center gap-4 text-brass;
+}
+.ledger-rule::before {
+  content: "";
+  @apply h-px flex-1 bg-ink-100 dark:bg-ink-400/40;
+}
+.ledger-rule::after {
+  content: "";
+  @apply h-px flex-1 bg-ink-100 dark:bg-ink-400/40;
+}
+
+.tabular-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Visible keyboard focus, always */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #B8863E;
+  outline-offset: 2px;
+}
