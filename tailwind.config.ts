@@ -10,40 +10,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        plum: {
+          DEFAULT: "#4A2545",
+          600: "#5C3157",
+          900: "#2E1730",
+        },
+        gold: {
+          DEFAULT: "#E0A32E",
+          400: "#F0C368",
+          600: "#B08A2E",
+        },
+        cream: {
+          DEFAULT: "#FCF8F0",
+          100: "#F5EFE2",
+        },
         ink: {
-          DEFAULT: "#1C2B39",
-          50: "#EEF1F4",
-          100: "#D6DEE5",
-          400: "#4C6478",
-          700: "#1C2B39",
-          900: "#111A22",
+          DEFAULT: "#201F1D",
+          100: "#E4DFD1",
+          400: "#6E6B67",
+          700: "#2C2A28",
+          900: "#161514",
         },
-        sage: {
-          DEFAULT: "#EDF1EC",
-          100: "#F5F7F4",
-          200: "#E4EBE2",
-        },
-        brass: {
-          DEFAULT: "#B8863E",
-          400: "#CBA05D",
-          600: "#9C6E2E",
-        },
-        forest: {
-          DEFAULT: "#3A5A50",
-          600: "#2C453D",
-        },
-        charcoal: "#2A2A28",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
-        body: ["var(--font-public-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-archivo)", "system-ui", "sans-serif"],
+        body: ["var(--font-plex-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-plex-mono)", "ui-monospace", "monospace"],
       },
       maxWidth: {
         content: "1160px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(28,43,57,0.06), 0 8px 24px rgba(28,43,57,0.06)",
+        card: "0 1px 2px rgba(32,26,34,0.06), 0 8px 24px rgba(32,26,34,0.06)",
       },
     },
   },

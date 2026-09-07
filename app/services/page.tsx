@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CardLink from "@/components/CardLink";
 import CTAButton from "@/components/CTAButton";
+import Eyebrow from "@/components/Eyebrow";
 import { services } from "@/lib/data/services";
 
 export const metadata: Metadata = {
@@ -13,11 +14,11 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <section className="max-w-content mx-auto px-6 py-16 md:py-20">
-      <p className="ledger-rule text-xs font-mono uppercase tracking-widest mb-4 max-w-fit pr-4">Services</p>
-      <h1 className="font-display text-4xl text-ink dark:text-sage-100 max-w-2xl">
+      <Eyebrow>Services</Eyebrow>
+      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
         Bookkeeping services built for how small businesses actually run
       </h1>
-      <p className="mt-4 text-ink-400 dark:text-sage-100/70 max-w-xl">
+      <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
         From day-to-day bookkeeping to year-end preparation, our team covers every part of keeping your books accurate — so you can focus on running your business.
       </p>
 

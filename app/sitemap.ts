@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { services } from "@/lib/data/services";
 import { industries } from "@/lib/data/industries";
 
-const siteUrl = "https://www.yourbookkeepingbrand.ca";
+const siteUrl = "https://www.countra.ca";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/services", "/industries", "/pricing", "/about", "/contact"].map((path) => ({

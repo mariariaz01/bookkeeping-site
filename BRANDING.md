@@ -1,85 +1,56 @@
-# Branding Recommendations
+# Countra — Brand Guide
 
-## 30 business name ideas
+The business name is **Countra**, tagline **Accounting & Bookkeeping**. This document records the finalized identity so design decisions stay consistent as the site grows.
 
-Grouped by feel — pick whichever register matches how you want to sound (all are checked for not being obviously trademarked accounting/bookkeeping software or major existing firms, but **run a NUTS/CIPO trademark search and a Google check before committing**).
+## Name rationale
 
-**Precise & trustworthy**
-1. Ledger & Co.
-2. Northbook Bookkeeping
-3. Clearline Bookkeeping
-4. True North Bookkeeping
-5. Balance Point Bookkeeping
-6. Steadfast Bookkeeping
-7. Precision Ledger Co.
-8. Clearpath Bookkeeping
-9. Sound Books Bookkeeping
-10. Anchor Bookkeeping Co.
+"Countra" compresses "count" with the root of **contra account** — the accounting term for an entry that offsets another to reveal the true, net position. Most visitors will read it as a clean, invented name; anyone who's kept a ledger gets a quiet nod.
 
-**Warm & personal**
-11. Maple Ledger Co.
-12. Harbour Bookkeeping
-13. Wren & Ledger
-14. Fernwood Bookkeeping
-15. Birchline Bookkeeping
-16. Everline Bookkeeping
-17. Kindred Books
-18. Homestead Bookkeeping
-19. Meadow & Ledger
-20. Willow Books Co.
+## Logo
 
-**Modern & minimal**
-21. Ledgerly
-22. Booknorth
-23. Tally & Co.
-24. Reconciled.
-25. Fielded Bookkeeping
-26. Numera Bookkeeping
-27. Basis Bookkeeping
-28. Sumline Bookkeeping
-29. Keepwell Bookkeeping
-30. Openbook Co.
+**Concept: the Countra monogram.** A bold, custom "C" letterform — not an icon in a container — with a small gold tally mark resting in its inner curve. Built as a genuine monogram (the way a law firm or bank might use a single custom initial) rather than a pictogram-in-a-rounded-square, which is what most generic app/business icons default to. See `components/Logo.tsx` for the live implementation and `public/logo/` for standalone SVG exports (icon alone, reversed for dark backgrounds, single-color for print, and full lockups).
 
-## Domain notes
+- Full lockup: monogram + "COUNTRA" (always full caps) + "Accounting & Bookkeeping" subtitle underneath, small and tracked.
+- The monogram alone is used for the favicon and anywhere space is tight; below ~24px the gold accent drops away and just the plum "C" remains (see `app/icon.svg`).
+- Don't put the mark inside a bounding box, frame, or rounded square — it's a letterform, not an icon, and a container around it undoes the whole point.
+- Don't add a gradient, drop shadow, or bevel, and don't recolor it outside the palette below — the flat, plain-color rendering is deliberate.
 
-For any name you shortlist, check both `.ca` and `.com` — as a Canadian-facing business, `.ca` matters more for local SEO/trust than it does for many industries. Likely-available patterns to try: `yournameco.ca`, `yourname-bookkeeping.ca`, `getyourname.ca`, `hello-yourname.ca`. Availability changes daily, so check directly at a registrar (CIRA-accredited registrar for `.ca`, e.g. Namecheap, Google Domains successor Squarespace Domains, or CIRA's own registrar list) before designing further around a name.
+## Colour palette
 
-## Brand colours
+| Role | Colour | Hex | Tailwind token |
+|---|---|---|---|
+| Primary (logo, headlines, buttons) | Plum | `#4A2545` | `plum` |
+| Primary hover | Plum, deeper | `#5C3157` | `plum-600` |
+| Dark-mode surface | Plum, darkest | `#2E1730` | `plum-900` |
+| Accent (icon back card, small highlights) | Gold | `#E0A32E` | `gold` |
+| Accent, text-safe | Gold, deeper | `#B08A2E` | `gold-600` |
+| Accent, on dark | Gold, lighter | `#F0C368` | `gold-400` |
+| Background | Cream | `#FCF8F0` | `cream` |
+| Footer / subtle surface | Cream, deeper | `#F5EFE2` | `cream-100` |
+| Body text / dark-mode background | Ink | `#201A22` | `ink` |
+| Muted text | Ink, lighter | `#6B6270` | `ink-400` |
+| Borders | Ink, lightest | `#E4DFD1` | `ink-100` |
 
-| Role | Colour | Hex |
-|---|---|---|
-| Primary (headlines, nav) | Ink Navy | `#1C2B39` |
-| Background | Soft Sage | `#EDF1EC` |
-| Accent | Brass | `#B8863E` |
-| Secondary accent | Deep Forest | `#3A5A50` |
-| Body text | Charcoal | `#2A2A28` |
+Gold is a small-dose accent — eyebrow labels, dividers, the icon's back card — never a full background or button fill. Plum carries the primary weight.
 
-Rationale: navy and forest green read as stable and financial without being cold; brass gives it warmth and a touch of premium feel (think of a ledger stamp or an old coin) instead of leaning on the generic terracotta/cream palette common in AI-generated branding right now.
+## Typography
 
-## Font pairing
+- **Display (headlines)**: Archivo, weight 700–900. Bold and plain-spoken rather than a trend geometric face — set the wordmark in weight 900.
+- **Body**: IBM Plex Sans, weight 400–600.
+- **Numbers / data / labels**: IBM Plex Mono, set with tabular figures so columns of numbers actually line up, and used for the eyebrow labels throughout the site.
 
-- **Display (headlines)**: Fraunces — a serif with real character and warmth, used sparingly so it stays distinctive.
-- **Body**: Public Sans — designed for government/financial clarity, very legible at small sizes.
-- **Numbers/data (prices, stats)**: IBM Plex Mono, set with tabular figures so columns of numbers actually line up — a small detail that quietly signals "we handle numbers carefully."
+All three are free, open-source, and available on Google Fonts.
 
-All three are free, open-source, and available on Google Fonts — no licensing cost.
+## Signature device
 
-## Logo concepts (for a designer or Canva/Looka to execute)
-
-1. **Ledger-line mark**: A minimal wordmark where one letterform (e.g., the crossbar of a "t" or the top of an "L") is drawn as a ruled ledger line — subtle, not literal.
-2. **Balanced-tick mark**: A small geometric checkmark/tick built from two straight strokes at a slight angle, echoing a reconciled ledger entry — usable as a standalone favicon.
-3. **Monogram in a rule**: Your initials or a single letter set inside a thin rectangular frame styled like a ledger cell, in navy on sage, brass on navy for the inverse.
-
-Keep it a wordmark or abstract mark — no literal calculators, coins-with-wings, or generic "growth arrow" clipart, which is what most small bookkeeping logos default to.
+A short plum (cream in dark mode) bar beside a small tracked mono label — see `.eyebrow` in `globals.css` and the `<Eyebrow>` component. Used at the top of nearly every section as the one recurring visual tie between pages.
 
 ## Brand personality
 
-Precise, warm, unflashy, dependable. Talks like a knowledgeable colleague, not a corporate brochure or a hustle-culture startup. Confident about numbers, plain about language.
+Modern, sophisticated, approachable, trustworthy — a firm with real personality, not a template. Confident about numbers, plain about language. Photography (see `public/images/`) is real people in real working moments, not staged stock-photo clichés — replace the current placeholders with real photos of your own team/office when available.
 
 ## Tagline ideas
 
 - "Books that balance. Time that's yours again."
 - "Bookkeeping, handled properly."
 - "Clarity in your numbers, every month."
-- "Your books, reconciled. Your time, returned."
-- "Bookkeeping you don't have to think about."

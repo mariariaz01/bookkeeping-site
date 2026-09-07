@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       onClick={toggle}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       aria-pressed={isDark}
-      className="rounded-full border border-ink-100 dark:border-ink-400/40 w-9 h-9 flex items-center justify-center text-sm hover:bg-sage-200 dark:hover:bg-ink-400/20 transition-colors"
+      className="rounded-full border border-ink-100 dark:border-ink-400/40 w-9 h-9 flex items-center justify-center text-sm hover:bg-ink-100 dark:hover:bg-ink-400/20 transition-colors"
     >
       {isDark ? "☀" : "☾"}
     </button>

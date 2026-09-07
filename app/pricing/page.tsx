@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PricingCard from "@/components/PricingCard";
 import FAQAccordion from "@/components/FAQAccordion";
+import Eyebrow from "@/components/Eyebrow";
 
 export const metadata: Metadata = {
   title: "Bookkeeping Pricing Packages | Canadian Bookkeeping Specialists",
@@ -67,11 +68,11 @@ const pricingFaqs = [
 export default function PricingPage() {
   return (
     <section className="max-w-content mx-auto px-6 py-16 md:py-20">
-      <p className="ledger-rule text-xs font-mono uppercase tracking-widest mb-4 max-w-fit pr-4">Pricing</p>
-      <h1 className="font-display text-4xl text-ink dark:text-sage-100 max-w-2xl">
+      <Eyebrow>Pricing</Eyebrow>
+      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
         Straightforward packages, sized to your business
       </h1>
-      <p className="mt-4 text-ink-400 dark:text-sage-100/70 max-w-xl">
+      <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
         Every business's bookkeeping needs are a little different, so exact pricing is confirmed after a free consultation. Here's what to expect at each level.
       </p>
 
@@ -82,7 +83,7 @@ export default function PricingPage() {
       </div>
 
       <div className="mt-20 max-w-2xl">
-        <h2 className="font-display text-2xl text-ink dark:text-sage-100 mb-6">Pricing questions</h2>
+        <h2 className="font-display font-extrabold text-2xl text-plum dark:text-cream mb-6">Pricing questions</h2>
         <FAQAccordion items={pricingFaqs} />
       </div>
     </section>

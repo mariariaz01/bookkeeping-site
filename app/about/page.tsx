@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
+import Eyebrow from "@/components/Eyebrow";
 
 export const metadata: Metadata = {
   title: "About Our Company | Canadian Bookkeeping Specialists",
@@ -34,29 +36,42 @@ const values = [
 export default function AboutPage() {
   return (
     <section className="max-w-content mx-auto px-6 py-16 md:py-20">
-      <p className="ledger-rule text-xs font-mono uppercase tracking-widest mb-4 max-w-fit pr-4">About our company</p>
-      <h1 className="font-display text-4xl text-ink dark:text-sage-100 max-w-2xl">
-        Bookkeeping built on accuracy, reliability, and clear communication
-      </h1>
-      <p className="mt-6 text-lg text-ink-400 dark:text-sage-100/80 max-w-xl leading-relaxed">
-        We started this company to give Canadian small businesses and self-employed professionals what larger firms often can't: dedicated attention, straightforward pricing, and books they can actually understand. Our team brings professional accounting training to the day-to-day work of keeping your finances organized, accurate, and ready whenever you need them.
-      </p>
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <Eyebrow>About our company</Eyebrow>
+          <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream">
+            Bookkeeping built on accuracy, reliability, and clear communication
+          </h1>
+          <p className="mt-6 text-lg text-ink-400 dark:text-cream/80 leading-relaxed">
+            We started this company to give Canadian small businesses and self-employed professionals what larger firms often can't: dedicated attention, straightforward pricing, and books they can actually understand. Our team brings professional accounting training to the day-to-day work of keeping your finances organized, accurate, and ready whenever you need them.
+          </p>
+        </div>
+        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-ink-100 dark:border-ink-400/20">
+          <Image
+            src="/images/hero-office-laptop.jpg"
+            alt="A bookkeeping specialist working on a laptop in a bright office"
+            fill
+            className="object-cover object-[center_30%]"
+            sizes="(min-width: 768px) 480px, 100vw"
+          />
+        </div>
+      </div>
 
       <div className="mt-16">
-        <h2 className="ledger-rule text-xs font-mono uppercase tracking-widest mb-8 max-w-fit pr-4">Our values</h2>
+        <Eyebrow>Our values</Eyebrow>
         <div className="grid sm:grid-cols-2 gap-10">
           {values.map((v) => (
             <div key={v.title}>
-              <h3 className="font-display text-xl text-ink dark:text-sage-100">{v.title}</h3>
-              <p className="mt-2 text-sm text-ink-400 dark:text-sage-100/70 leading-relaxed">{v.body}</p>
+              <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{v.title}</h3>
+              <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{v.body}</p>
             </div>
           ))}
         </div>
       </div>
 
       <div className="mt-16 rounded-2xl bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20 shadow-card p-8">
-        <h2 className="font-display text-2xl text-ink dark:text-sage-100">Our mission</h2>
-        <p className="mt-3 text-ink-700 dark:text-sage-100/90 leading-relaxed max-w-2xl">
+        <h2 className="font-display font-extrabold text-2xl text-plum dark:text-cream">Our mission</h2>
+        <p className="mt-3 text-ink-700 dark:text-cream/90 leading-relaxed max-w-2xl">
           To give Canadian small business owners clear, accurate, and up-to-date books every month — so financial confusion never gets in the way of running the business they set out to build.
         </p>
       </div>

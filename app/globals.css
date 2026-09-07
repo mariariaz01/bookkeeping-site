@@ -26,21 +26,17 @@ html {
 }
 
 body {
-  @apply bg-sage text-charcoal dark:bg-ink-900 dark:text-sage-100 font-body antialiased;
+  @apply bg-cream text-ink dark:bg-ink-900 dark:text-cream font-body antialiased;
 }
 
-/* Signature motif: ledger rule — a hairline with a tabular numeral, used as a
-   section divider. This is the one recurring device tying pages together. */
-.ledger-rule {
-  @apply flex items-center gap-4 text-brass;
+/* Signature motif: a short plum/cream bar beside a tracked mono label —
+   the one recurring device tying section openers together across the site. */
+.eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-gold-600 dark:text-gold-400;
 }
-.ledger-rule::before {
+.eyebrow::before {
   content: "";
-  @apply h-px flex-1 bg-ink-100 dark:bg-ink-400/40;
-}
-.ledger-rule::after {
-  content: "";
-  @apply h-px flex-1 bg-ink-100 dark:bg-ink-400/40;
+  @apply h-0.5 w-4 bg-plum dark:bg-cream shrink-0;
 }
 
 .tabular-num {
@@ -53,6 +49,6 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid #B8863E;
+  outline: 2px solid #E0A32E;
   outline-offset: 2px;
 }

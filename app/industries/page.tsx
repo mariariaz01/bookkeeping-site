@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CardLink from "@/components/CardLink";
 import CTAButton from "@/components/CTAButton";
+import Eyebrow from "@/components/Eyebrow";
 import { industries } from "@/lib/data/industries";
 
 export const metadata: Metadata = {
@@ -13,11 +14,11 @@ export const metadata: Metadata = {
 export default function IndustriesPage() {
   return (
     <section className="max-w-content mx-auto px-6 py-16 md:py-20">
-      <p className="ledger-rule text-xs font-mono uppercase tracking-widest mb-4 max-w-fit pr-4">Industries</p>
-      <h1 className="font-display text-4xl text-ink dark:text-sage-100 max-w-2xl">
+      <Eyebrow>Industries</Eyebrow>
+      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
         Bookkeeping that understands your industry
       </h1>
-      <p className="mt-4 text-ink-400 dark:text-sage-100/70 max-w-xl">
+      <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
         Every industry runs a little differently. Our team builds your books around how your business actually earns and spends.
       </p>
 

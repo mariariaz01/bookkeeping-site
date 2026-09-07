@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": [
+        "-c",
+        "export PATH=\"/Users/MariaR1/.local/share/claude-node/node-v24.20.0-darwin-arm64/bin:$PATH\"; exec npm run dev"
+      ],
+      "port": 3000
+    }
+  ]
+}
