@@ -68,10 +68,12 @@ export default function AboutPage() {
         <Eyebrow>Our values</Eyebrow>
         <div className="grid sm:grid-cols-2 gap-10">
           {values.map((v) => (
-            <div key={v.title}>
+            <div key={v.title} className="flex items-start gap-4">
               <IconBadge name={v.icon} />
-              <h3 className="mt-4 font-display font-bold text-xl text-plum dark:text-cream">{v.title}</h3>
-              <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{v.body}</p>
+              <div>
+                <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{v.title}</h3>
+                <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{v.body}</p>
+              </div>
             </div>
           ))}
         </div>

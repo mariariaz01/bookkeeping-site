@@ -120,10 +120,12 @@ export default function HomePage() {
         </h2>
         <div className="mt-10 grid sm:grid-cols-2 gap-8">
           {whyUs.map((item) => (
-            <div key={item.title}>
+            <div key={item.title} className="flex items-start gap-4">
               <IconBadge name={item.icon} />
-              <h3 className="mt-4 font-display font-bold text-xl text-plum dark:text-cream">{item.title}</h3>
-              <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{item.body}</p>
+              <div>
+                <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{item.title}</h3>
+                <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{item.body}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -199,13 +201,13 @@ export default function HomePage() {
 
         <ol className="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {process.map((p) => (
-            <li key={p.step}>
-              <div className="flex items-center justify-between">
-                <IconBadge name={p.icon} size="sm" />
+            <li key={p.step} className="flex items-start gap-4">
+              <IconBadge name={p.icon} size="sm" />
+              <div>
                 <span className="font-mono tabular-num text-gold-600 text-sm">{p.step}</span>
+                <h3 className="mt-1 font-display font-bold text-lg text-plum dark:text-cream">{p.title}</h3>
+                <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{p.body}</p>
               </div>
-              <h3 className="mt-4 font-display font-bold text-lg text-plum dark:text-cream">{p.title}</h3>
-              <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{p.body}</p>
             </li>
           ))}
         </ol>
