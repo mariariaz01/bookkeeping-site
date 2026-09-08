@@ -21,12 +21,12 @@ const config: Config = {
           600: "#9C6B1F",
         },
         cream: {
-          DEFAULT: "#FCF8F0",
-          100: "#F5EFE2",
+          DEFAULT: "#FFFFFF",
+          100: "#F3F3F1",
         },
         ink: {
           DEFAULT: "#201F1D",
-          100: "#E4DFD1",
+          100: "#E7E7E5",
           400: "#6E6B67",
           700: "#2C2A28",
           900: "#161514",
