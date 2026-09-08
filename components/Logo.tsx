@@ -4,12 +4,12 @@ const sizes = {
   lg: { icon: "h-14 w-14", word: "text-4xl", sub: "text-xs", gap: "gap-4" },
 };
 
-function Mark({ className }: { className?: string }) {
+function Mark({ className, invert }: { className?: string; invert?: boolean }) {
   return (
     <svg viewBox="0 0 72 72" className={className} aria-hidden="true">
       <path
         d="M48 14 A22 22 0 1 0 48 58 L48 49 A13 13 0 1 1 48 23 Z"
-        className="fill-plum dark:fill-cream"
+        className={invert ? "fill-cream" : "fill-plum dark:fill-cream"}
       />
       {/* A small stack of coins, seen edge-on, resting in the C's opening */}
       <rect x="44" y="26" width="13" height="6" rx="3" className="fill-gold stroke-gold-600" strokeWidth="1" />
@@ -22,26 +22,39 @@ function Mark({ className }: { className?: string }) {
 export default function Logo({
   variant = "full",
   size = "md",
+  invert = false,
   className = "",
 }: {
   variant?: "full" | "icon";
   size?: "sm" | "md" | "lg";
+  /** Force the light-on-dark colors regardless of the site's light/dark
+   *  toggle — for placing the logo on a surface that's always dark, like
+   *  the plum footer. */
+  invert?: boolean;
   className?: string;
 }) {
   const s = sizes[size];
 
   if (variant === "icon") {
-    return <Mark className={`${s.icon} shrink-0 ${className}`} />;
+    return <Mark className={`${s.icon} shrink-0 ${className}`} invert={invert} />;
   }
 
   return (
     <span className={`inline-flex items-center ${s.gap} ${className}`}>
-      <Mark className={`${s.icon} shrink-0`} />
+      <Mark className={`${s.icon} shrink-0`} invert={invert} />
       <span className="flex flex-col leading-none">
-        <span className={`font-display font-black uppercase tracking-tight text-plum dark:text-cream ${s.word}`}>
+        <span
+          className={`font-display font-black uppercase tracking-tight ${s.word} ${
+            invert ? "text-cream" : "text-plum dark:text-cream"
+          }`}
+        >
           Countra
         </span>
-        <span className={`font-mono uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400 mt-1 ${s.sub}`}>
+        <span
+          className={`font-mono uppercase tracking-[0.2em] mt-1 ${s.sub} ${
+            invert ? "text-gold-400" : "text-gold-600 dark:text-gold-400"
+          }`}
+        >
           Accounting &amp; Bookkeeping
         </span>
       </span>
