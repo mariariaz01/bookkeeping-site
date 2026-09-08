@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CTAButton from "@/components/CTAButton";
 import Eyebrow from "@/components/Eyebrow";
+import IconBadge from "@/components/IconBadge";
 import { industries, getIndustry } from "@/lib/data/industries";
 
 export function generateStaticParams() {
@@ -25,9 +26,12 @@ export default function IndustryDetailPage({ params }: { params: { slug: string 
   return (
     <article className="max-w-content mx-auto px-6 py-16 md:py-20">
       <Eyebrow>Industries</Eyebrow>
-      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
-        Bookkeeping for {industry.name}
-      </h1>
+      <div className="flex items-center gap-4">
+        <IconBadge name={industry.icon} size="md" />
+        <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
+          Bookkeeping for {industry.name}
+        </h1>
+      </div>
       <p className="mt-4 text-lg text-ink-400 dark:text-cream/80 max-w-xl">{industry.shortDescription}</p>
 
       <div className="mt-10 grid md:grid-cols-3 gap-12">

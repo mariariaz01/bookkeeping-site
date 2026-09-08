@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import CTAButton from "@/components/CTAButton";
 import FAQAccordion from "@/components/FAQAccordion";
 import Eyebrow from "@/components/Eyebrow";
+import IconBadge from "@/components/IconBadge";
 import { services, getService } from "@/lib/data/services";
 
 export function generateStaticParams() {
@@ -27,7 +28,10 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
   return (
     <article className="max-w-content mx-auto px-6 py-16 md:py-20">
       <Eyebrow>Services</Eyebrow>
-      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">{service.name}</h1>
+      <div className="flex items-center gap-4">
+        <IconBadge name={service.icon} size="md" />
+        <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">{service.name}</h1>
+      </div>
       <p className="mt-4 text-lg text-ink-400 dark:text-cream/80 max-w-xl">{service.shortDescription}</p>
 
       <div className="mt-10 grid md:grid-cols-3 gap-12">

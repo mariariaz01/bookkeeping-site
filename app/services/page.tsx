@@ -24,7 +24,7 @@ export default function ServicesPage() {
 
       <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {services.map((s, idx) => (
-          <CardLink key={s.slug} href={`/services/${s.slug}`} title={s.name} description={s.shortDescription} index={idx + 1} />
+          <CardLink key={s.slug} href={`/services/${s.slug}`} title={s.name} description={s.shortDescription} icon={s.icon} index={idx + 1} />
         ))}
       </div>
 

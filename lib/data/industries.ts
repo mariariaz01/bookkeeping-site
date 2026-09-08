@@ -1,5 +1,8 @@
+import type { IconName } from "@/components/Icons";
+
 export type Industry = {
   slug: string;
+  icon: IconName;
   name: string;
   shortDescription: string;
   metaTitle: string;
@@ -11,6 +14,7 @@ export type Industry = {
 export const industries: Industry[] = [
   {
     slug: "contractors",
+    icon: "paintTool",
     name: "Contractors",
     shortDescription: "Job costing, holdbacks, and cash flow that keeps pace with the work.",
     metaTitle: "Bookkeeping for Contractors | Canadian Bookkeeping Specialists",
@@ -20,6 +24,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "consultants",
+    icon: "briefcase",
     name: "Consultants",
     shortDescription: "Simple books for a business built on billable time.",
     metaTitle: "Bookkeeping for Consultants | Canadian Bookkeeping Specialists",
@@ -29,6 +34,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "real-estate",
+    icon: "home",
     name: "Real Estate",
     shortDescription: "Commission income, trust accounts, and property-level detail, handled properly.",
     metaTitle: "Bookkeeping for Real Estate Professionals | Canadian Bookkeeping",
@@ -38,6 +44,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "medical-professionals",
+    icon: "medicalCross",
     name: "Medical Professionals",
     shortDescription: "Books that fit clinic income, billing cycles, and professional corporations.",
     metaTitle: "Bookkeeping for Medical Professionals | Canadian Bookkeeping Specialists",
@@ -47,6 +54,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "dentists",
+    icon: "tooth",
     name: "Dentists",
     shortDescription: "Practice-level bookkeeping for owners and associates alike.",
     metaTitle: "Bookkeeping for Dentists | Canadian Bookkeeping Specialists",
@@ -56,6 +64,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "lawyers",
+    icon: "scale",
     name: "Lawyers",
     shortDescription: "General account bookkeeping that respects the line to your trust account.",
     metaTitle: "Bookkeeping for Law Firms & Lawyers | Canadian Bookkeeping Specialists",
@@ -65,6 +74,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "marketing-agencies",
+    icon: "megaphone",
     name: "Marketing Agencies",
     shortDescription: "Retainers, project billing, and contractor payments, all in one clear picture.",
     metaTitle: "Bookkeeping for Marketing Agencies | Canadian Bookkeeping Specialists",
@@ -74,6 +84,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "restaurants",
+    icon: "utensils",
     name: "Restaurants",
     shortDescription: "Daily sales, tips, and thin margins, tracked with the detail they need.",
     metaTitle: "Bookkeeping for Restaurants | Canadian Bookkeeping Specialists",
@@ -83,6 +94,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "retail",
+    icon: "bag",
     name: "Retail",
     shortDescription: "Inventory-aware bookkeeping for stores with real stock to track.",
     metaTitle: "Bookkeeping for Retail Businesses | Canadian Bookkeeping Specialists",
@@ -92,6 +104,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "e-commerce",
+    icon: "cart",
     name: "E-commerce",
     shortDescription: "Multi-platform sales, fees, and shipping costs, reconciled properly.",
     metaTitle: "Bookkeeping for E-commerce Businesses | Canadian Bookkeeping Specialists",
@@ -101,6 +114,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "trades",
+    icon: "hammerWrench",
     name: "Trades",
     shortDescription: "Bookkeeping built for tools, trucks, and seasonal work.",
     metaTitle: "Bookkeeping for Trades Businesses | Canadian Bookkeeping Specialists",
@@ -110,6 +124,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "startups",
+    icon: "rocket",
     name: "Startups",
     shortDescription: "Investor-ready books from day one, without the enterprise overhead.",
     metaTitle: "Bookkeeping for Startups | Canadian Bookkeeping Specialists",

@@ -1,5 +1,8 @@
+import type { IconName } from "@/components/Icons";
+
 export type Service = {
   slug: string;
+  icon: IconName;
   name: string;
   shortDescription: string;
   metaTitle: string;
@@ -13,6 +16,7 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "monthly-bookkeeping",
+    icon: "layers",
     name: "Monthly Bookkeeping",
     shortDescription: "Your books, reconciled and reported every month — never a scramble at tax time.",
     metaTitle: "Monthly Bookkeeping Services for Canadian Small Businesses",
@@ -41,6 +45,7 @@ export const services: Service[] = [
   },
   {
     slug: "catch-up-bookkeeping",
+    icon: "clock",
     name: "Catch-Up Bookkeeping",
     shortDescription: "Behind on your books? Our team gets you current — one month or three years back.",
     metaTitle: "Catch-Up & Back Bookkeeping Services | Canadian Bookkeeping Specialists",
@@ -69,6 +74,7 @@ export const services: Service[] = [
   },
   {
     slug: "bank-reconciliations",
+    icon: "checkSquare",
     name: "Bank Reconciliations",
     shortDescription: "Every transaction matched, every discrepancy explained.",
     metaTitle: "Bank & Credit Card Reconciliation Services | Bookkeeping for Canadian Businesses",
@@ -92,6 +98,7 @@ export const services: Service[] = [
   },
   {
     slug: "financial-reporting",
+    icon: "barChart",
     name: "Financial Reporting",
     shortDescription: "Clear reports that tell you what's actually happening in your business.",
     metaTitle: "Financial Reporting Services for Small Business Owners | Canada",
@@ -115,6 +122,7 @@ export const services: Service[] = [
   },
   {
     slug: "accounts-payable",
+    icon: "arrowUpRight",
     name: "Accounts Payable",
     shortDescription: "Bills tracked and paid on time, without the manual chasing.",
     metaTitle: "Accounts Payable Management Services | Canadian Bookkeeping",
@@ -135,6 +143,7 @@ export const services: Service[] = [
   },
   {
     slug: "accounts-receivable",
+    icon: "arrowDownLeft",
     name: "Accounts Receivable",
     shortDescription: "Invoices out on time, and follow-up handled before it becomes awkward.",
     metaTitle: "Accounts Receivable & Invoicing Support | Canadian Bookkeeping Specialists",
@@ -155,6 +164,7 @@ export const services: Service[] = [
   },
   {
     slug: "payroll-support",
+    icon: "users",
     name: "Payroll Support",
     shortDescription: "Accurate, on-time payroll for your team, done right the first time.",
     metaTitle: "Small Business Payroll Support Services | Canada",
@@ -175,6 +185,7 @@ export const services: Service[] = [
   },
   {
     slug: "gst-hst-support",
+    icon: "receipt",
     name: "GST/HST Support",
     shortDescription: "Returns filed accurately and on time, with the rules explained in plain English.",
     metaTitle: "GST/HST Filing & Support for Small Businesses | Canadian Bookkeeping",
@@ -195,6 +206,7 @@ export const services: Service[] = [
   },
   {
     slug: "year-end-preparation",
+    icon: "folderCheck",
     name: "Year-End Preparation",
     shortDescription: "Books closed, reconciled, and handed to your accountant ready to file.",
     metaTitle: "Year-End Bookkeeping Preparation Services | Canada",
@@ -215,6 +227,7 @@ export const services: Service[] = [
   },
   {
     slug: "quickbooks-online-support",
+    icon: "refresh",
     name: "QuickBooks Online Support",
     shortDescription: "Setup, cleanup, and ongoing support for QuickBooks Online — no learning curve required.",
     metaTitle: "QuickBooks Online Setup & Support Services | Canadian Bookkeeping",

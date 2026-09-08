@@ -24,7 +24,7 @@ export default function IndustriesPage() {
 
       <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {industries.map((i, idx) => (
-          <CardLink key={i.slug} href={`/industries/${i.slug}`} title={i.name} description={i.shortDescription} index={idx + 1} />
+          <CardLink key={i.slug} href={`/industries/${i.slug}`} title={i.name} description={i.shortDescription} icon={i.icon} index={idx + 1} />
         ))}
       </div>
 

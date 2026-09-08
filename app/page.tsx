@@ -5,6 +5,8 @@ import CardLink from "@/components/CardLink";
 import FAQAccordion from "@/components/FAQAccordion";
 import ConsultationForm from "@/components/ConsultationForm";
 import Eyebrow from "@/components/Eyebrow";
+import IconBadge from "@/components/IconBadge";
+import type { IconName } from "@/components/Icons";
 import { services } from "@/lib/data/services";
 
 export const metadata: Metadata = {
@@ -14,30 +16,34 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const whyUs = [
+const whyUs: { title: string; body: string; icon: IconName }[] = [
   {
     title: "Built for small business",
     body: "We work exclusively with Canadian small businesses and self-employed professionals — not enterprise finance departments. Everything we do is sized to fit you.",
+    icon: "target",
   },
   {
     title: "Real people, not just software",
     body: "You get a dedicated bookkeeping specialist who learns your business, not a rotating queue of support tickets.",
+    icon: "users",
   },
   {
     title: "Accuracy you can rely on",
     body: "Every account is reconciled, every month, following consistent processes designed to catch errors before they become problems.",
+    icon: "checkSquare",
   },
   {
     title: "Confidential by design",
     body: "Your financial information is handled with strict confidentiality and secure, encrypted tools at every step.",
+    icon: "shield",
   },
 ];
 
-const process = [
-  { step: "01", title: "Free consultation", body: "We learn about your business, your current bookkeeping situation, and what you need." },
-  { step: "02", title: "Simple onboarding", body: "We connect securely to your accounts and set up (or clean up) your bookkeeping software." },
-  { step: "03", title: "Monthly bookkeeping", body: "Your team reconciles accounts and categorizes transactions every month, on schedule." },
-  { step: "04", title: "Clear reporting", body: "You receive plain-language reports so you always know where your business stands." },
+const process: { step: string; title: string; body: string; icon: IconName }[] = [
+  { step: "01", title: "Free consultation", body: "We learn about your business, your current bookkeeping situation, and what you need.", icon: "users" },
+  { step: "02", title: "Simple onboarding", body: "We connect securely to your accounts and set up (or clean up) your bookkeeping software.", icon: "plug" },
+  { step: "03", title: "Monthly bookkeeping", body: "Your team reconciles accounts and categorizes transactions every month, on schedule.", icon: "layers" },
+  { step: "04", title: "Clear reporting", body: "You receive plain-language reports so you always know where your business stands.", icon: "barChart" },
 ];
 
 const faqs = [
@@ -115,7 +121,8 @@ export default function HomePage() {
         <div className="mt-10 grid sm:grid-cols-2 gap-8">
           {whyUs.map((item) => (
             <div key={item.title}>
-              <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{item.title}</h3>
+              <IconBadge name={item.icon} />
+              <h3 className="mt-4 font-display font-bold text-xl text-plum dark:text-cream">{item.title}</h3>
               <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{item.body}</p>
             </div>
           ))}
@@ -165,6 +172,7 @@ export default function HomePage() {
               href={`/services/${s.slug}`}
               title={s.name}
               description={s.shortDescription}
+              icon={s.icon}
               index={idx + 1}
             />
           ))}
@@ -192,8 +200,11 @@ export default function HomePage() {
         <ol className="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {process.map((p) => (
             <li key={p.step}>
-              <span className="font-mono tabular-num text-gold-600 text-sm">{p.step}</span>
-              <h3 className="mt-2 font-display font-bold text-lg text-plum dark:text-cream">{p.title}</h3>
+              <div className="flex items-center justify-between">
+                <IconBadge name={p.icon} size="sm" />
+                <span className="font-mono tabular-num text-gold-600 text-sm">{p.step}</span>
+              </div>
+              <h3 className="mt-4 font-display font-bold text-lg text-plum dark:text-cream">{p.title}</h3>
               <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{p.body}</p>
             </li>
           ))}
