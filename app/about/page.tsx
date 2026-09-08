@@ -82,7 +82,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="mt-16 rounded-2xl bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20 shadow-card p-8">
+      <div className="mt-16 rounded-2xl bg-plum/[0.04] dark:bg-cream/5 border border-plum/15 dark:border-cream/15 shadow-card p-8">
         <h2 className="font-display font-extrabold text-2xl text-plum dark:text-cream">Our mission</h2>
         <p className="mt-3 text-ink-700 dark:text-cream/90 leading-relaxed max-w-2xl">
           To give Canadian small business owners clear, accurate, and up-to-date books every month — so financial confusion never gets in the way of running the business they set out to build.

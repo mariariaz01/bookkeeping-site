@@ -18,7 +18,7 @@ export default function PricingCard({
       className={`rounded-2xl p-8 flex flex-col ${
         featured
           ? "bg-plum text-cream shadow-card md:-translate-y-3"
-          : "bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20"
+          : "bg-plum/[0.04] dark:bg-cream/5 border border-plum/15 dark:border-cream/15"
       }`}
     >
       {featured && (

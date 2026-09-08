@@ -36,7 +36,7 @@ export default function ContactPage() {
             </div>
           </dl>
         </div>
-        <div className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20 shadow-card p-8">
+        <div className="rounded-2xl bg-plum/[0.04] dark:bg-cream/5 border border-plum/15 dark:border-cream/15 shadow-card p-8">
           <ConsultationForm />
         </div>
       </div>

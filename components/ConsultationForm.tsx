@@ -35,7 +35,7 @@ export default function ConsultationForm() {
             name="name"
             type="text"
             required
-            className="w-full rounded-lg border border-ink-100 dark:border-ink-400/30 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
+            className="w-full rounded-lg border border-plum/20 dark:border-cream/20 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
           />
         </div>
         <div>
@@ -46,7 +46,7 @@ export default function ConsultationForm() {
             id="business"
             name="business"
             type="text"
-            className="w-full rounded-lg border border-ink-100 dark:border-ink-400/30 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
+            className="w-full rounded-lg border border-plum/20 dark:border-cream/20 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
           />
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function ConsultationForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-lg border border-ink-100 dark:border-ink-400/30 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
+            className="w-full rounded-lg border border-plum/20 dark:border-cream/20 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
           />
         </div>
         <div>
@@ -72,7 +72,7 @@ export default function ConsultationForm() {
             id="phone"
             name="phone"
             type="tel"
-            className="w-full rounded-lg border border-ink-100 dark:border-ink-400/30 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
+            className="w-full rounded-lg border border-plum/20 dark:border-cream/20 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function ConsultationForm() {
           id="message"
           name="message"
           rows={4}
-          className="w-full rounded-lg border border-ink-100 dark:border-ink-400/30 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
+          className="w-full rounded-lg border border-plum/20 dark:border-cream/20 bg-white dark:bg-ink-900 px-4 py-2.5 text-sm focus:outline-none"
         />
       </div>
 

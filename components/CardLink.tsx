@@ -18,7 +18,7 @@ export default function CardLink({
   return (
     <Link
       href={href}
-      className="group flex items-start gap-4 rounded-xl border border-ink-100 dark:border-ink-400/20 bg-white dark:bg-ink-900 p-6 hover:border-gold hover:shadow-card transition-all"
+      className="group flex items-start gap-4 rounded-xl border border-plum/15 dark:border-cream/15 bg-plum/[0.04] dark:bg-cream/5 p-6 hover:border-gold hover:shadow-card transition-all"
     >
       <IconBadge name={icon} />
       <div className="flex-1 min-w-0">

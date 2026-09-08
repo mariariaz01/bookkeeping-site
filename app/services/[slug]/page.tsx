@@ -54,7 +54,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
           </div>
         </div>
 
-        <aside className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20 shadow-card p-6 h-fit">
+        <aside className="rounded-2xl bg-plum/[0.04] dark:bg-cream/5 border border-plum/15 dark:border-cream/15 shadow-card p-6 h-fit">
           <h2 className="font-display font-bold text-lg text-plum dark:text-cream">Ready to get started?</h2>
           <p className="mt-2 text-sm text-ink-400 dark:text-cream/70">
             Book a free consultation and our team will confirm the right fit for your business.
