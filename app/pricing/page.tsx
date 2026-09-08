@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: "Starter",
-    startingAt: "$XXX",
+    startingAt: "$375",
     description: "For new and small businesses with straightforward, single-account bookkeeping needs.",
     features: [
       "Monthly transaction categorization",
@@ -24,7 +24,7 @@ const packages = [
   },
   {
     name: "Growth",
-    startingAt: "$XXX",
+    startingAt: "$650",
     description: "For growing businesses with multiple accounts and more moving pieces.",
     features: [
       "Everything in Starter",
@@ -37,7 +37,7 @@ const packages = [
   },
   {
     name: "Premium",
-    startingAt: "$XXX",
+    startingAt: "$1,100",
     description: "For established businesses that want fuller reporting and dedicated support.",
     features: [
       "Everything in Growth",
@@ -84,6 +84,10 @@ export default function PricingPage() {
               <PricingCard key={p.name} {...p} />
             ))}
           </div>
+
+          <p className="mt-6 text-sm text-ink-400 dark:text-cream/70">
+            Exact pricing is confirmed after a free 20-minute consultation — most Growth-tier clients land between $650 and $850 a month.
+          </p>
         </div>
       </section>
 

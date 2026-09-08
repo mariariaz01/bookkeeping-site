@@ -79,10 +79,10 @@ export default function HomePage() {
           <div>
             <Eyebrow invert>Virtual bookkeeping, Canada-wide</Eyebrow>
             <h1 className="font-display font-extrabold text-4xl md:text-5xl leading-[1.1] text-cream">
-              Books that balance. Time that's yours again.
+              Your books, actually up to date. Every month, without the chase.
             </h1>
             <p className="mt-6 text-lg text-cream/75 max-w-md">
-              Dedicated bookkeeping for Canadian small businesses and self-employed professionals — reconciled monthly, reported clearly, handled by a real team.
+              COUNTRA is an Ottawa-based bookkeeping practice built for independent consultants and small professional-service firms — one dedicated bookkeeper who knows your business, reconciles your accounts every month, and explains what the numbers actually mean.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <CTAButton href="/contact" className="!bg-cream !text-plum hover:!bg-cream/90">
