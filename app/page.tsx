@@ -217,8 +217,8 @@ export default function HomePage() {
               Tell us a little about your business and where your bookkeeping stands today. We'll follow up within one business day.
             </p>
             <p className="mt-6 text-sm text-ink-400 dark:text-cream/70">
-              hello@countra.ca<br />
-              (000) 000-0000
+              countra@gmail.com<br />
+              613-302-7429
             </p>
           </div>
           <div className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20 shadow-card p-8">

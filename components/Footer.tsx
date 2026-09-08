@@ -13,8 +13,8 @@ export default function Footer() {
             Dedicated virtual bookkeeping for Canadian small businesses and self-employed professionals.
           </p>
           <p className="mt-4 text-sm text-ink-400 dark:text-cream/70">
-            hello@countra.ca<br />
-            (000) 000-0000
+            countra@gmail.com<br />
+            613-302-7429
           </p>
         </div>
 

@@ -1,28 +1,21 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Libre_Franklin, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeScript from "@/components/ThemeScript";
 
-const archivo = Archivo({
+const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
-  variable: "--font-archivo",
+  variable: "--font-libre-franklin",
   weight: ["600", "700", "800", "900"],
   display: "swap",
 });
 
-const plexSans = IBM_Plex_Sans({
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  variable: "--font-plex-sans",
+  variable: "--font-source-sans",
   weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-plex-mono",
-  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -69,7 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en-CA" className={`${archivo.variable} ${plexSans.variable} ${plexMono.variable}`} suppressHydrationWarning>
+    <html lang="en-CA" className={`${libreFranklin.variable} ${sourceSans.variable}`} suppressHydrationWarning>
       <head>
         <ThemeScript />
         <script

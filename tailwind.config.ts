@@ -18,7 +18,7 @@ const config: Config = {
         gold: {
           DEFAULT: "#E0A32E",
           400: "#F0C368",
-          600: "#B08A2E",
+          600: "#9C6B1F",
         },
         cream: {
           DEFAULT: "#FCF8F0",
@@ -33,9 +33,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-archivo)", "system-ui", "sans-serif"],
-        body: ["var(--font-plex-sans)", "system-ui", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "ui-monospace", "monospace"],
+        display: ["var(--font-libre-franklin)", "system-ui", "sans-serif"],
+        body: ["var(--font-source-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-source-sans)", "system-ui", "sans-serif"],
       },
       maxWidth: {
         content: "1160px",

@@ -24,11 +24,11 @@ export default function ContactPage() {
           <dl className="mt-8 space-y-3 text-sm">
             <div className="flex gap-2">
               <dt className="font-medium text-ink-700 dark:text-cream">Email:</dt>
-              <dd className="text-ink-400 dark:text-cream/70">hello@countra.ca</dd>
+              <dd className="text-ink-400 dark:text-cream/70">countra@gmail.com</dd>
             </div>
             <div className="flex gap-2">
               <dt className="font-medium text-ink-700 dark:text-cream">Phone:</dt>
-              <dd className="text-ink-400 dark:text-cream/70">(000) 000-0000</dd>
+              <dd className="text-ink-400 dark:text-cream/70">613-302-7429</dd>
             </div>
             <div className="flex gap-2">
               <dt className="font-medium text-ink-700 dark:text-cream">Service area:</dt>
