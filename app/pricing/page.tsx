@@ -67,25 +67,32 @@ const pricingFaqs = [
 
 export default function PricingPage() {
   return (
-    <section className="max-w-content mx-auto px-6 py-16 md:py-20">
-      <Eyebrow>Pricing</Eyebrow>
-      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
-        Straightforward packages, sized to your business
-      </h1>
-      <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
-        Every business's bookkeeping needs are a little different, so exact pricing is confirmed after a free consultation. Here's what to expect at each level.
-      </p>
+    <>
+      <section className="relative overflow-hidden">
+        <div className="dot-watermark" aria-hidden="true" />
+        <div className="relative z-10 max-w-content mx-auto px-6 py-16 md:py-20">
+          <Eyebrow>Pricing</Eyebrow>
+          <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
+            Straightforward packages, sized to your business
+          </h1>
+          <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
+            Every business's bookkeeping needs are a little different, so exact pricing is confirmed after a free consultation. Here's what to expect at each level.
+          </p>
 
-      <div className="mt-12 grid md:grid-cols-3 gap-6">
-        {packages.map((p) => (
-          <PricingCard key={p.name} {...p} />
-        ))}
-      </div>
+          <div className="mt-12 grid md:grid-cols-3 gap-6">
+            {packages.map((p) => (
+              <PricingCard key={p.name} {...p} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <div className="mt-20 max-w-2xl">
-        <h2 className="font-display font-extrabold text-2xl text-plum dark:text-cream mb-6">Pricing questions</h2>
-        <FAQAccordion items={pricingFaqs} />
-      </div>
-    </section>
+      <section className="max-w-content mx-auto px-6 pb-16 md:pb-20">
+        <div className="max-w-2xl">
+          <h2 className="font-display font-extrabold text-2xl text-plum dark:text-cream mb-6">Pricing questions</h2>
+          <FAQAccordion items={pricingFaqs} />
+        </div>
+      </section>
+    </>
   );
 }

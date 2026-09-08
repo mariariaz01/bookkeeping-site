@@ -64,18 +64,21 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <Eyebrow>Our values</Eyebrow>
-        <div className="grid sm:grid-cols-2 gap-10">
-          {values.map((v) => (
-            <div key={v.title} className="flex items-start gap-4">
-              <IconBadge name={v.icon} />
-              <div>
-                <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{v.title}</h3>
-                <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{v.body}</p>
+      <div className="relative overflow-hidden mt-16 -mx-6 px-6 py-2">
+        <div className="dot-watermark" aria-hidden="true" />
+        <div className="relative z-10">
+          <Eyebrow>Our values</Eyebrow>
+          <div className="grid sm:grid-cols-2 gap-10">
+            {values.map((v) => (
+              <div key={v.title} className="flex items-start gap-4">
+                <IconBadge name={v.icon} />
+                <div>
+                  <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{v.title}</h3>
+                  <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{v.body}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 

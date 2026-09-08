@@ -13,23 +13,26 @@ export const metadata: Metadata = {
 
 export default function IndustriesPage() {
   return (
-    <section className="max-w-content mx-auto px-6 py-16 md:py-20">
-      <Eyebrow>Industries</Eyebrow>
-      <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
-        Bookkeeping that understands your industry
-      </h1>
-      <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
-        Every industry runs a little differently. Our team builds your books around how your business actually earns and spends.
-      </p>
+    <section className="relative overflow-hidden">
+      <div className="dot-watermark" aria-hidden="true" />
+      <div className="relative z-10 max-w-content mx-auto px-6 py-16 md:py-20">
+        <Eyebrow>Industries</Eyebrow>
+        <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
+          Bookkeeping that understands your industry
+        </h1>
+        <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
+          Every industry runs a little differently. Our team builds your books around how your business actually earns and spends.
+        </p>
 
-      <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {industries.map((i, idx) => (
-          <CardLink key={i.slug} href={`/industries/${i.slug}`} title={i.name} description={i.shortDescription} icon={i.icon} index={idx + 1} />
-        ))}
-      </div>
+        <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {industries.map((i, idx) => (
+            <CardLink key={i.slug} href={`/industries/${i.slug}`} title={i.name} description={i.shortDescription} icon={i.icon} index={idx + 1} />
+          ))}
+        </div>
 
-      <div className="mt-16 text-center">
-        <CTAButton href="/contact">Book a free consultation</CTAButton>
+        <div className="mt-16 text-center">
+          <CTAButton href="/contact">Book a free consultation</CTAButton>
+        </div>
       </div>
     </section>
   );

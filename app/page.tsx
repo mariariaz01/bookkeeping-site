@@ -185,35 +185,38 @@ export default function HomePage() {
       </section>
 
       {/* Process */}
-      <section className="max-w-content mx-auto px-6 py-16">
-        <Eyebrow>Our process</Eyebrow>
-        <h2 className="font-display font-extrabold text-3xl text-plum dark:text-cream max-w-xl">Simple to start, simple to stay with</h2>
+      <section className="relative overflow-hidden">
+        <div className="dot-watermark" aria-hidden="true" />
+        <div className="relative z-10 max-w-content mx-auto px-6 py-16">
+          <Eyebrow>Our process</Eyebrow>
+          <h2 className="font-display font-extrabold text-3xl text-plum dark:text-cream max-w-xl">Simple to start, simple to stay with</h2>
 
-        <div className="mt-10 relative rounded-2xl overflow-hidden border border-ink-100 dark:border-ink-400/20 aspect-[21/9]">
-          <Image
-            src="/images/consultation-review.jpg"
-            alt="A bookkeeper reviewing a document with a client"
-            fill
-            className="object-cover object-[center_20%]"
-            sizes="100vw"
-          />
-          <span className="absolute left-4 bottom-4 bg-plum/90 text-cream font-mono text-xs uppercase tracking-widest px-3 py-2 rounded">
-            Monthly walkthrough, together
-          </span>
+          <div className="mt-10 relative rounded-2xl overflow-hidden border border-ink-100 dark:border-ink-400/20 aspect-[21/9]">
+            <Image
+              src="/images/consultation-review.jpg"
+              alt="A bookkeeper reviewing a document with a client"
+              fill
+              className="object-cover object-[center_20%]"
+              sizes="100vw"
+            />
+            <span className="absolute left-4 bottom-4 bg-plum/90 text-cream font-mono text-xs uppercase tracking-widest px-3 py-2 rounded">
+              Monthly walkthrough, together
+            </span>
+          </div>
+
+          <ol className="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {process.map((p) => (
+              <li key={p.step} className="flex items-start gap-4">
+                <IconBadge name={p.icon} size="sm" />
+                <div>
+                  <span className="font-mono tabular-num text-gold-600 text-sm">{p.step}</span>
+                  <h3 className="mt-1 font-display font-bold text-lg text-plum dark:text-cream">{p.title}</h3>
+                  <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{p.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
-
-        <ol className="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {process.map((p) => (
-            <li key={p.step} className="flex items-start gap-4">
-              <IconBadge name={p.icon} size="sm" />
-              <div>
-                <span className="font-mono tabular-num text-gold-600 text-sm">{p.step}</span>
-                <h3 className="mt-1 font-display font-bold text-lg text-plum dark:text-cream">{p.title}</h3>
-                <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{p.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
       </section>
 
       {/* FAQ */}
