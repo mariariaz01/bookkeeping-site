@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="col-span-2">
           <Logo invert />
           <p className="mt-4 text-sm text-cream/70 max-w-xs">
-            Dedicated virtual bookkeeping for Canadian small businesses and self-employed professionals.
+            Dedicated bookkeeping for Canadian small businesses and self-employed professionals.
           </p>
           <p className="mt-4 text-sm text-cream/70">
             countra@gmail.com<br />

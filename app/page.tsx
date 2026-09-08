@@ -10,9 +10,9 @@ import type { IconName } from "@/components/Icons";
 import { services } from "@/lib/data/services";
 
 export const metadata: Metadata = {
-  title: "Virtual Bookkeeping Services for Canadian Small Businesses",
+  title: "Bookkeeping for Consultants & Small Firms | Countra",
   description:
-    "Dedicated virtual bookkeeping for Canadian small businesses, entrepreneurs, and self-employed professionals. Book a free consultation with COUNTRA.",
+    "Dedicated bookkeeping for Canadian small businesses, entrepreneurs, and self-employed professionals. Book a free consultation with COUNTRA.",
   alternates: { canonical: "/" },
 };
 
@@ -89,7 +89,7 @@ export default function HomePage() {
         <div className="dot-watermark-invert" aria-hidden="true" />
         <div className="relative z-10 max-w-content mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <Eyebrow invert>Virtual bookkeeping, Canada-wide</Eyebrow>
+            <Eyebrow invert>Ottawa-based bookkeeping, Canada-wide</Eyebrow>
             <h1 className="font-display font-extrabold text-4xl md:text-5xl leading-[1.1] text-cream">
               Your books, actually up to date. Every month, without the chase.
             </h1>

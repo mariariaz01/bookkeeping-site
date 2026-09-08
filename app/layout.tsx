@@ -24,11 +24,11 @@ const siteUrl = "https://www.countra.ca";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Virtual Bookkeeping Services for Canadian Small Businesses",
+    default: "Bookkeeping for Consultants & Small Firms | Countra",
     template: "%s | Countra",
   },
   description:
-    "Dedicated virtual bookkeeping for Canadian small businesses, entrepreneurs, and self-employed professionals. Monthly bookkeeping, catch-up cleanups, and CRA-ready reporting.",
+    "Dedicated bookkeeping for Canadian small businesses, entrepreneurs, and self-employed professionals. Monthly bookkeeping, catch-up cleanups, and CRA-ready reporting.",
   keywords: [
     "virtual bookkeeping Canada",
     "small business bookkeeper",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: siteUrl,
     siteName: "Countra",
-    title: "Virtual Bookkeeping Services for Canadian Small Businesses",
+    title: "Bookkeeping for Consultants & Small Firms | Countra",
     description:
-      "Dedicated virtual bookkeeping for Canadian small businesses and self-employed professionals. Book a free consultation.",
+      "Dedicated bookkeeping for Canadian small businesses and self-employed professionals. Book a free consultation.",
   },
   alternates: {
     canonical: "/",
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "AccountingService",
     name: "Countra",
     description:
-      "Virtual bookkeeping services for Canadian small businesses, entrepreneurs, and self-employed professionals.",
+      "Bookkeeping services for Canadian small businesses, entrepreneurs, and self-employed professionals.",
     areaServed: "CA",
     url: siteUrl,
     priceRange: "$$",
