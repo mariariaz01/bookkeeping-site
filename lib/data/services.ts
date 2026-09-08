@@ -24,7 +24,7 @@ export const services: Service[] = [
       "Ongoing monthly bookkeeping for Canadian small businesses and self-employed professionals. Accurate books, on-time reports, and a dedicated bookkeeping specialist.",
     keywords: ["monthly bookkeeping Canada", "small business bookkeeper", "bookkeeping services Canada"],
     intro:
-      "Monthly bookkeeping is the foundation everything else depends on. Our team categorizes every transaction, reconciles every account, and delivers a clean set of books each month — so you always know where your business stands.",
+      "Monthly bookkeeping is the foundation everything else depends on. COUNTRA categorizes every transaction, reconciles every account, and delivers a clean set of books each month — so you always know where your business stands.",
     bullets: [
       "Transaction categorization across all your accounts",
       "Monthly bank and credit card reconciliations",
@@ -39,7 +39,7 @@ export const services: Service[] = [
       },
       {
         q: "Do I need to keep my own records too?",
-        a: "No. We ask for access to your accounts and receipts, and our team handles the entry and reconciliation from there.",
+        a: "No. We ask for access to your accounts and receipts, and COUNTRA handles the entry and reconciliation from there.",
       },
     ],
   },
@@ -47,13 +47,13 @@ export const services: Service[] = [
     slug: "catch-up-bookkeeping",
     icon: "clock",
     name: "Catch-Up Bookkeeping",
-    shortDescription: "Behind on your books? Our team gets you current — one month or three years back.",
+    shortDescription: "Behind on your books? COUNTRA gets you current — one month or three years back.",
     metaTitle: "Catch-Up & Back Bookkeeping Services | Canadian Bookkeeping Specialists",
     metaDescription:
       "Fallen behind on your bookkeeping? Our specialists reconcile months or years of backlogged books quickly and accurately, so you can file with confidence.",
     keywords: ["catch up bookkeeping", "back bookkeeping services", "behind on bookkeeping Canada"],
     intro:
-      "Falling behind happens to busy business owners all the time. Our team reviews your existing records, rebuilds what's missing, and brings your books fully current — without judgment and without the drama.",
+      "Falling behind happens to busy business owners all the time. COUNTRA reviews your existing records, rebuilds what's missing, and brings your books fully current — without judgment and without the drama.",
     bullets: [
       "Bookkeeping cleanup for any time period, from one quarter to several years",
       "Reconciliation of historical bank and credit card statements",
@@ -82,7 +82,7 @@ export const services: Service[] = [
       "Professional bank and credit card reconciliation services that catch errors, duplicate charges, and missing transactions before they become bigger problems.",
     keywords: ["bank reconciliation service", "credit card reconciliation", "bookkeeping reconciliation Canada"],
     intro:
-      "Reconciliation is where small errors get caught before they become expensive ones. Our team matches every transaction against your statements each month, so your books always reflect reality.",
+      "Reconciliation is where small errors get caught before they become expensive ones. COUNTRA matches every transaction against your statements each month, so your books always reflect reality.",
     bullets: [
       "Monthly reconciliation of all bank and credit card accounts",
       "Identification of duplicate, missing, or miscoded transactions",
@@ -106,7 +106,7 @@ export const services: Service[] = [
       "Monthly and custom financial reports — profit & loss, balance sheet, and cash flow — built for owners who want clarity, not just compliance.",
     keywords: ["financial reporting small business", "profit and loss statement", "bookkeeping reports Canada"],
     intro:
-      "Numbers only help if you can read them. Our team builds financial reports that are accurate and genuinely useful, with a plain-language summary so you understand what changed and why.",
+      "Numbers only help if you can read them. COUNTRA builds financial reports that are accurate and genuinely useful, with a plain-language summary so you understand what changed and why.",
     bullets: [
       "Monthly profit & loss and balance sheet statements",
       "Cash flow summaries",
@@ -130,7 +130,7 @@ export const services: Service[] = [
       "Accounts payable support that tracks vendor bills, manages payment timing, and keeps your cash flow predictable.",
     keywords: ["accounts payable services", "bill pay bookkeeping", "vendor payment management"],
     intro:
-      "Late fees and missed payments are avoidable. Our team tracks every vendor bill, keeps payments organized, and gives you visibility into what's owed and when.",
+      "Late fees and missed payments are avoidable. COUNTRA tracks every vendor bill, keeps payments organized, and gives you visibility into what's owed and when.",
     bullets: [
       "Vendor bill tracking and entry",
       "Payment scheduling to protect cash flow",
@@ -145,13 +145,13 @@ export const services: Service[] = [
     slug: "accounts-receivable",
     icon: "arrowDownLeft",
     name: "Accounts Receivable",
-    shortDescription: "Invoices out on time, and follow-up handled before it becomes awkward.",
+    shortDescription: "Retainers, project milestones, and one-off invoices — tracked and followed up on before a late payment becomes an awkward conversation.",
     metaTitle: "Accounts Receivable & Invoicing Support | Canadian Bookkeeping Specialists",
     metaDescription:
       "Accounts receivable support that keeps invoices accurate, tracks who owes what, and follows up professionally on overdue accounts.",
     keywords: ["accounts receivable services", "invoicing support small business", "overdue invoice follow up"],
     intro:
-      "Getting paid on time shouldn't depend on remembering to send a reminder. Our team manages invoicing and receivables so outstanding balances get followed up professionally and consistently.",
+      "Getting paid on time shouldn't depend on remembering to send a reminder. COUNTRA manages invoicing and receivables so outstanding balances get followed up professionally and consistently.",
     bullets: [
       "Invoice creation and tracking",
       "Accounts receivable aging reports",
@@ -166,13 +166,13 @@ export const services: Service[] = [
     slug: "payroll-support",
     icon: "users",
     name: "Payroll Support",
-    shortDescription: "Accurate, on-time payroll for your team, done right the first time.",
+    shortDescription: "Accurate, on-time payroll for employees — plus T4A tracking for the subcontractors many agencies and consulting firms rely on.",
     metaTitle: "Small Business Payroll Support Services | Canada",
     metaDescription:
       "Payroll support for Canadian small businesses, including remittances, records of employment, and year-end T4 preparation.",
     keywords: ["small business payroll services", "payroll bookkeeping Canada", "T4 preparation"],
     intro:
-      "Payroll has to be right every single time. Our team handles the calculations, remittances, and filings so your employees are paid accurately and on schedule.",
+      "Payroll has to be right every single time. COUNTRA handles the calculations, remittances, and filings so your employees are paid accurately and on schedule.",
     bullets: [
       "Payroll processing and calculations",
       "CRA payroll remittances",
@@ -193,7 +193,7 @@ export const services: Service[] = [
       "GST/HST bookkeeping support for Canadian small businesses — accurate tracking, return preparation, and filing so you never miss a deadline.",
     keywords: ["GST HST filing services", "GST bookkeeping Canada", "small business HST support"],
     intro:
-      "GST/HST rules are confusing, and getting them wrong is costly. Our team tracks what you've collected and paid, prepares your returns, and keeps you ahead of every CRA deadline.",
+      "GST/HST rules are confusing, and getting them wrong is costly. COUNTRA tracks what you've collected and paid, prepares your returns, and keeps you ahead of every CRA deadline.",
     bullets: [
       "GST/HST tracking within your monthly books",
       "Return preparation and filing",
@@ -201,7 +201,7 @@ export const services: Service[] = [
       "Deadline tracking so nothing is filed late",
     ],
     faqs: [
-      { q: "I'm not sure if I need to be registered for GST/HST. Can you help?", a: "Yes. Our team can review your revenue and business activity and walk you through whether registration applies to you." },
+      { q: "I'm not sure if I need to be registered for GST/HST. Can you help?", a: "Yes. COUNTRA can review your revenue and business activity and walk you through whether registration applies to you." },
     ],
   },
   {
@@ -214,7 +214,7 @@ export const services: Service[] = [
       "Year-end bookkeeping preparation that closes out your books, reconciles every account, and gets your records ready for your accountant or CPA.",
     keywords: ["year end bookkeeping", "year end preparation small business", "tax season bookkeeping Canada"],
     intro:
-      "Year-end shouldn't mean weeks of stress before a filing deadline. Our team closes out your books, confirms every account is reconciled, and prepares a clean file for your accountant or CPA.",
+      "Year-end shouldn't mean weeks of stress before a filing deadline. COUNTRA closes out your books, confirms every account is reconciled, and prepares a clean file for your accountant or CPA.",
     bullets: [
       "Final reconciliation of all accounts for the year",
       "Review of asset, liability, and equity accounts",
@@ -235,7 +235,7 @@ export const services: Service[] = [
       "QuickBooks Online setup, cleanup, and training for Canadian small businesses. Get your books organized in the software you already use — or should be using.",
     keywords: ["QuickBooks Online setup Canada", "QuickBooks bookkeeping support", "QBO cleanup services"],
     intro:
-      "QuickBooks Online is powerful, but only if it's set up correctly. Our team can build your file from scratch, clean up an existing one, or simply manage it for you every month.",
+      "QuickBooks Online is powerful, but only if it's set up correctly. COUNTRA can build your file from scratch, clean up an existing one, or simply manage it for you every month.",
     bullets: [
       "New QuickBooks Online account setup and chart of accounts design",
       "Cleanup of existing QBO files",

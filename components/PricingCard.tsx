@@ -2,12 +2,14 @@ import CTAButton from "./CTAButton";
 
 export default function PricingCard({
   name,
+  tagline,
   startingAt,
   description,
   features,
   featured = false,
 }: {
   name: string;
+  tagline: string;
   startingAt: string;
   description: string;
   features: string[];
@@ -25,6 +27,7 @@ export default function PricingCard({
         <span className="text-xs font-semibold uppercase tracking-wide text-gold mb-3">Most popular</span>
       )}
       <h3 className={`font-display font-extrabold text-2xl ${featured ? "text-cream" : "text-plum dark:text-cream"}`}>{name}</h3>
+      <p className={`mt-1 text-xs font-semibold uppercase tracking-wide ${featured ? "text-gold-400" : "text-gold-600"}`}>{tagline}</p>
       <p className={`mt-2 text-sm ${featured ? "text-cream/80" : "text-ink-400 dark:text-cream/70"}`}>{description}</p>
       <p className="mt-6 font-mono tabular-num text-3xl">
         <span className="align-top text-base mr-1">Starting at</span>

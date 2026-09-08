@@ -17,7 +17,7 @@ export default function ConsultationForm() {
       <div className="rounded-xl bg-gold/10 border border-gold/30 p-6 text-center">
         <p className="font-display font-bold text-xl text-plum dark:text-gold-400">Thank you — your request is in.</p>
         <p className="mt-2 text-sm text-ink-400 dark:text-cream/70">
-          A member of our team will reach out within one business day to schedule your free consultation.
+          You'll hear back within one business day to schedule your free consultation.
         </p>
       </div>
     );

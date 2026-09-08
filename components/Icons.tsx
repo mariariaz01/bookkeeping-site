@@ -242,6 +242,17 @@ export function IconPlug({ className }: IconProps) {
   );
 }
 
+export function IconLandmark({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4 9.5L12 4l8 5.5" />
+      <path d="M5 9.5h14" />
+      <path d="M6.5 9.5V18M10.5 9.5V18M13.5 9.5V18M17.5 9.5V18" />
+      <path d="M4 20.5h16" />
+    </svg>
+  );
+}
+
 export const icons = {
   layers: IconLayers,
   clock: IconClock,
@@ -268,6 +279,7 @@ export const icons = {
   shield: IconShield,
   target: IconTarget,
   plug: IconPlug,
+  landmark: IconLandmark,
 };
 
 export type IconName = keyof typeof icons;

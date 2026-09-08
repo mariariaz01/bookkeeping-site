@@ -57,7 +57,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
         <aside className="rounded-2xl bg-plum/[0.04] dark:bg-cream/5 border border-plum/15 dark:border-cream/15 shadow-card p-6 h-fit">
           <h2 className="font-display font-bold text-lg text-plum dark:text-cream">Ready to get started?</h2>
           <p className="mt-2 text-sm text-ink-400 dark:text-cream/70">
-            Book a free consultation and our team will confirm the right fit for your business.
+            Book a free consultation and we'll confirm the right fit for your business.
           </p>
           <div className="mt-5">
             <CTAButton href="/contact">Book a free consultation</CTAButton>

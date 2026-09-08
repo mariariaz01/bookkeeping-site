@@ -18,10 +18,10 @@ export default function ServicesPage() {
       <div className="relative z-10 max-w-content mx-auto px-6 py-16 md:py-20">
         <Eyebrow>Services</Eyebrow>
         <h1 className="font-display font-extrabold text-4xl text-plum dark:text-cream max-w-2xl">
-          Bookkeeping services built for how small businesses actually run
+          Bookkeeping built for how consultants and small firms actually get paid
         </h1>
         <p className="mt-4 text-ink-400 dark:text-cream/70 max-w-xl">
-          From day-to-day bookkeeping to year-end preparation, our team covers every part of keeping your books accurate — so you can focus on running your business.
+          From day-to-day bookkeeping to year-end preparation, COUNTRA covers every part of keeping your books accurate — retainers, project invoices, and contractor payments included — so you can focus on client work.
         </p>
 
         <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: "Starter",
+    tagline: "For solo consultants and freelancers",
     startingAt: "$375",
     description: "For new and small businesses with straightforward, single-account bookkeeping needs.",
     features: [
@@ -24,6 +25,7 @@ const packages = [
   },
   {
     name: "Growth",
+    tagline: "For agencies and growing consulting firms",
     startingAt: "$650",
     description: "For growing businesses with multiple accounts and more moving pieces.",
     features: [
@@ -37,6 +39,7 @@ const packages = [
   },
   {
     name: "Premium",
+    tagline: "For established firms and government contractors",
     startingAt: "$1,100",
     description: "For established businesses that want fuller reporting and dedicated support.",
     features: [

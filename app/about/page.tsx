@@ -25,7 +25,7 @@ const values: { title: string; body: string; icon: IconName }[] = [
   },
   {
     title: "Client service",
-    body: "You should never feel like a ticket number. Our team takes the time to understand your business and communicates in plain language.",
+    body: "You should never feel like a ticket number. COUNTRA takes the time to understand your business and communicates in plain language.",
     icon: "users",
   },
   {
@@ -35,7 +35,7 @@ const values: { title: string; body: string; icon: IconName }[] = [
   },
   {
     title: "Confidentiality",
-    body: "Your financial information is sensitive. It's handled with strict confidentiality and secure tools at every step, by every member of our team.",
+    body: "Your financial information is sensitive. It's handled with strict confidentiality and secure tools at every step.",
     icon: "shield",
   },
 ];

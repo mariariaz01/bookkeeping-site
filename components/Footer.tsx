@@ -75,7 +75,7 @@ export default function Footer() {
       <div className="border-t border-cream/15">
         <div className="max-w-content mx-auto px-6 py-6 flex flex-col md:flex-row justify-between gap-2 text-xs text-cream/60">
           <p>© {new Date().getFullYear()} Countra. All rights reserved.</p>
-          <p>Serving small businesses across Canada, virtually.</p>
+          <p>Based in Ottawa. Serving independent consultants and small professional-service firms across Ontario and Canada, virtually.</p>
         </div>
       </div>
     </footer>

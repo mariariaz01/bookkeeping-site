@@ -12,23 +12,23 @@ import { services } from "@/lib/data/services";
 export const metadata: Metadata = {
   title: "Virtual Bookkeeping Services for Canadian Small Businesses",
   description:
-    "Dedicated virtual bookkeeping for Canadian small businesses, entrepreneurs, and self-employed professionals. Book a free consultation with our team.",
+    "Dedicated virtual bookkeeping for Canadian small businesses, entrepreneurs, and self-employed professionals. Book a free consultation with COUNTRA.",
   alternates: { canonical: "/" },
 };
 
 const whyUs: { title: string; body: string; icon: IconName }[] = [
   {
-    title: "Built for small business",
+    title: "Built for consultants and small firms — not enterprise overhead",
     body: "We work exclusively with Canadian small businesses and self-employed professionals — not enterprise finance departments. Everything we do is sized to fit you.",
     icon: "target",
   },
   {
-    title: "Real people, not just software",
+    title: "One dedicated bookkeeper — not software on autopilot, not a rotating team",
     body: "You get a dedicated bookkeeping specialist who learns your business, not a rotating queue of support tickets.",
     icon: "users",
   },
   {
-    title: "Accuracy you can rely on",
+    title: "Accuracy you can rely on — every account reconciled and reviewed monthly",
     body: "Every account is reconciled, every month, following consistent processes designed to catch errors before they become problems.",
     icon: "checkSquare",
   },
@@ -42,7 +42,7 @@ const whyUs: { title: string; body: string; icon: IconName }[] = [
 const process: { step: string; title: string; body: string; icon: IconName }[] = [
   { step: "01", title: "Free consultation", body: "We learn about your business, your current bookkeeping situation, and what you need.", icon: "users" },
   { step: "02", title: "Simple onboarding", body: "We connect securely to your accounts and set up (or clean up) your bookkeeping software.", icon: "plug" },
-  { step: "03", title: "Monthly bookkeeping", body: "Your team reconciles accounts and categorizes transactions every month, on schedule.", icon: "layers" },
+  { step: "03", title: "Monthly bookkeeping", body: "COUNTRA reconciles your accounts and categorizes transactions every month, on schedule.", icon: "layers" },
   { step: "04", title: "Clear reporting", body: "You receive plain-language reports so you always know where your business stands.", icon: "barChart" },
 ];
 
@@ -53,19 +53,31 @@ const faqs = [
   },
   {
     q: "What software do you work with?",
-    a: "We support QuickBooks Online, Xero, and Wave. If you're not currently using any of these, our team can help you choose and set one up.",
+    a: "We support QuickBooks Online, Xero, and Wave. If you're not currently using any of these, COUNTRA can help you choose and set one up.",
   },
   {
     q: "How is my financial information kept secure?",
-    a: "We use encrypted, industry-standard tools for file sharing and account access, and every team member follows strict confidentiality practices.",
+    a: "We use encrypted, industry-standard tools for file sharing and account access, and strict confidentiality practices are followed at every step.",
   },
   {
     q: "I'm behind on my bookkeeping. Can you still help?",
-    a: "Yes — catch-up bookkeeping is one of our most requested services. Our team can bring months or years of backlogged books current.",
+    a: "Yes — catch-up bookkeeping is one of our most requested services. COUNTRA can bring months or years of backlogged books current.",
   },
   {
     q: "Do you also file my taxes?",
     a: "We focus on bookkeeping, and prepare clean, accurate books for your accountant or CPA. We're happy to coordinate directly with them.",
+  },
+  {
+    q: "Do you work with government contractors and consultants who invoice through a corporation?",
+    a: "Yes — this is a large part of who COUNTRA works with. Whether you invoice as an incorporated consultant, a sole proprietor, or a small agency with subcontractors, your books are set up to match how you actually get paid.",
+  },
+  {
+    q: "I invoice some clients in U.S. dollars — can you handle that?",
+    a: "Yes. Multi-currency invoicing and reconciliation is common among Ottawa consultants working with U.S. clients, and it's built into how we set up your books.",
+  },
+  {
+    q: "I'm not incorporated yet — can you still help?",
+    a: "Yes. Sole proprietors and incorporated businesses are both welcome; your package is based on transaction volume and complexity, not your business structure.",
   },
 ];
 
@@ -156,7 +168,7 @@ export default function HomePage() {
           <div className="order-1 md:order-2">
             <Eyebrow>Who we work with</Eyebrow>
             <h2 className="font-display font-extrabold text-3xl text-plum dark:text-cream">
-              Built for the business you actually run
+              Built around how consultants and agencies actually bill
             </h2>
             <p className="mt-4 text-ink-400 dark:text-cream/70 leading-relaxed max-w-md">
               Not an enterprise finance department — a real small business, with real seasons, real cash-flow questions, and better things to do than reconcile a spreadsheet at midnight.
