@@ -73,8 +73,9 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-plum">
-        <div className="max-w-content mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
+      <section className="relative overflow-hidden bg-plum">
+        <div className="dot-watermark-invert" aria-hidden="true" />
+        <div className="relative z-10 max-w-content mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <Eyebrow invert>Virtual bookkeeping, Canada-wide</Eyebrow>
             <h1 className="font-display font-extrabold text-4xl md:text-5xl leading-[1.1] text-cream">

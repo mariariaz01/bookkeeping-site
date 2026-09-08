@@ -61,6 +61,21 @@ body {
 .dark .dot-watermark {
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1.6px, transparent 1.6px);
 }
+
+/* Same motif, always-cream dots, for permanently-dark surfaces (the plum
+   hero) regardless of the site's light/dark toggle. Positioned toward the
+   ledger card rather than centered. */
+.dot-watermark-invert {
+  position: absolute;
+  inset: -20%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.16) 1.6px, transparent 1.6px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 90% at 78% 30%, black 20%, transparent 72%);
+  mask-image: radial-gradient(ellipse 60% 90% at 78% 30%, black 20%, transparent 72%);
+  animation: dot-watermark-breathe 14s ease-in-out infinite;
+}
 @keyframes dot-watermark-breathe {
   0%, 100% { transform: scale(1); opacity: 0.7; }
   50% { transform: scale(1.08); opacity: 1; }
