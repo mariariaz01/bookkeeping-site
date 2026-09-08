@@ -113,21 +113,24 @@ export default function HomePage() {
       </section>
 
       {/* Why choose us */}
-      <section className="max-w-content mx-auto px-6 py-16">
-        <Eyebrow>Why choose us</Eyebrow>
-        <h2 className="font-display font-extrabold text-3xl text-plum dark:text-cream max-w-xl">
-          Bookkeeping that gives you clarity, not just compliance
-        </h2>
-        <div className="mt-10 grid sm:grid-cols-2 gap-8">
-          {whyUs.map((item) => (
-            <div key={item.title} className="flex items-start gap-4">
-              <IconBadge name={item.icon} />
-              <div>
-                <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{item.title}</h3>
-                <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{item.body}</p>
+      <section className="relative overflow-hidden">
+        <div className="dot-watermark" aria-hidden="true" />
+        <div className="relative z-10 max-w-content mx-auto px-6 py-16">
+          <Eyebrow>Why choose us</Eyebrow>
+          <h2 className="font-display font-extrabold text-3xl text-plum dark:text-cream max-w-xl">
+            Bookkeeping that gives you clarity, not just compliance
+          </h2>
+          <div className="mt-10 grid sm:grid-cols-2 gap-8">
+            {whyUs.map((item) => (
+              <div key={item.title} className="flex items-start gap-4">
+                <IconBadge name={item.icon} />
+                <div>
+                  <h3 className="font-display font-bold text-xl text-plum dark:text-cream">{item.title}</h3>
+                  <p className="mt-2 text-sm text-ink-400 dark:text-cream/70 leading-relaxed">{item.body}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
