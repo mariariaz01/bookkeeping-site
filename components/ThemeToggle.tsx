@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ className = "" }: { className?: string }) {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       onClick={toggle}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       aria-pressed={isDark}
-      className="rounded-full border border-ink-100 dark:border-ink-400/40 w-9 h-9 flex items-center justify-center text-sm hover:bg-ink-100 dark:hover:bg-ink-400/20 transition-colors"
+      className={`rounded-full border border-ink-100 dark:border-ink-400/40 w-9 h-9 flex items-center justify-center text-sm hover:bg-ink-100 dark:hover:bg-ink-400/20 transition-colors ${className}`}
     >
       {isDark ? "☀" : "☾"}
     </button>
