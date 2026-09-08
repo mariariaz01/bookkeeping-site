@@ -73,41 +73,47 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-content mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <Eyebrow>Virtual bookkeeping, Canada-wide</Eyebrow>
-          <h1 className="font-display font-extrabold text-4xl md:text-5xl leading-[1.1] text-plum dark:text-cream">
-            Books that balance. Time that's yours again.
-          </h1>
-          <p className="mt-6 text-lg text-ink-400 dark:text-cream/80 max-w-md">
-            Dedicated bookkeeping for Canadian small businesses and self-employed professionals — reconciled monthly, reported clearly, handled by a real team.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <CTAButton href="/contact">Book a free consultation</CTAButton>
-            <CTAButton href="/services" variant="secondary">Explore services</CTAButton>
-          </div>
-        </div>
-
-        {/* Signature visual: a stylized ledger card, not a stock photo */}
-        <div className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-100 dark:border-ink-400/20 shadow-card p-6 font-mono text-sm tabular-num">
-          <div className="flex justify-between text-xs text-ink-400 dark:text-cream/60 uppercase tracking-wide pb-3 border-b border-ink-100 dark:border-ink-400/20">
-            <span>Account</span>
-            <span>Balance</span>
-          </div>
-          {[
-            ["Operating — Chequing", "$18,204.40"],
-            ["Business Visa", "$1,120.65"],
-            ["GST/HST Payable", "$2,340.10"],
-            ["Accounts Receivable", "$6,750.00"],
-          ].map(([label, val]) => (
-            <div key={label} className="flex justify-between py-3 border-b border-ink-100 dark:border-ink-400/10 text-ink-700 dark:text-cream/90">
-              <span className="font-body">{label}</span>
-              <span>{val}</span>
+      <section className="bg-plum">
+        <div className="max-w-content mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <Eyebrow invert>Virtual bookkeeping, Canada-wide</Eyebrow>
+            <h1 className="font-display font-extrabold text-4xl md:text-5xl leading-[1.1] text-cream">
+              Books that balance. Time that's yours again.
+            </h1>
+            <p className="mt-6 text-lg text-cream/75 max-w-md">
+              Dedicated bookkeeping for Canadian small businesses and self-employed professionals — reconciled monthly, reported clearly, handled by a real team.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <CTAButton href="/contact" className="!bg-cream !text-plum hover:!bg-cream/90">
+                Book a free consultation
+              </CTAButton>
+              <CTAButton href="/services" variant="secondary" className="!border-cream/50 !text-cream hover:!bg-cream/10">
+                Explore services
+              </CTAButton>
             </div>
-          ))}
-          <div className="flex justify-between pt-4 text-gold-600 dark:text-gold-400 font-semibold">
-            <span className="font-body">Reconciled</span>
-            <span>✓ this month</span>
+          </div>
+
+          {/* Signature visual: a stylized ledger card, not a stock photo */}
+          <div className="rounded-2xl bg-white shadow-card p-6 font-mono text-sm tabular-num">
+            <div className="flex justify-between text-xs text-ink-400 uppercase tracking-wide pb-3 border-b border-ink-100">
+              <span>Account</span>
+              <span>Balance</span>
+            </div>
+            {[
+              ["Operating — Chequing", "$18,204.40"],
+              ["Business Visa", "$1,120.65"],
+              ["GST/HST Payable", "$2,340.10"],
+              ["Accounts Receivable", "$6,750.00"],
+            ].map(([label, val]) => (
+              <div key={label} className="flex justify-between py-3 border-b border-ink-100 text-ink-700">
+                <span className="font-body">{label}</span>
+                <span>{val}</span>
+              </div>
+            ))}
+            <div className="flex justify-between pt-4 text-gold-600 font-semibold">
+              <span className="font-body">Reconciled</span>
+              <span>✓ this month</span>
+            </div>
           </div>
         </div>
       </section>
